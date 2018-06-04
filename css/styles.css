@@ -1,17 +1,23 @@
 * {
   box-sizing: border-box;
 }
-.container {
+
+.gallery {
   display:flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
+  width: 70%;
+
+}
+.gallery a {
+  display:inline-block;
 }
 
 .searchbox {
-  /*  why is display block not working*/
-  width:100%;
+  display: block;
+  width:70%;
   padding: 10px;
 }
 
@@ -23,6 +29,20 @@ input[type="search"] {
   border-style:solid;
   border-color:lightgray;
 }
+/* ------------------------------------
+<!--lightbox styles -->
+------------------------------------ */
+.sl-overlay {
+  background: #000;
+  opacity: 0.9;
+}
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-navigation button {
+    color: #fff;
+}
+.sl-wrapper .sl-counter {
+  display: hidden;
+}
 
 
 @media only screen and (min-width : 768px) {
@@ -32,7 +52,3 @@ input[type="search"] {
     }
 
 @media only screen and (min-width : 1200px) {
-  .searchbox {
-    margin-left: 250px;
-    }
-   }
