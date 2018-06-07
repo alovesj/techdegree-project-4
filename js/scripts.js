@@ -16,7 +16,7 @@ input.addEventListener('keyup', () => {
 
   for (let i=0; i < imgLinks.length; i++) {
     console.log[i];
-        let caption = (imgLinks[i].getAttribute('title').toLowerCase);
+        let caption = (imgLinks[i].getAttribute('title').toLowerCase());
         if(caption.includes(searchResult)){
           imgLinks[i].style.display = '';
         } else {
