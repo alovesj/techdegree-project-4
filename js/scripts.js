@@ -7,20 +7,22 @@ const searchList= document.querySelector('.gallery');
 console.log(searchList);
 
 //get elements to be searched through
-const imgLinks = searchList.querySelectorAll("a");
-console.log(imgLinks[0]);
+const imgLinks = searchList.querySelectorAll("img");
+console.log(imgLinks);
 
 
 input.addEventListener('keyup', () => {
   let searchResult = input.value.toLowerCase();
 
-  for ( let i=0; i < imgLinks.length; i++) {
-        let caption = (imgLinks[i].getAttribute('title');
-        if  (caption.includes(searchResult)){
-          imgLinks.style.display = '';
+  for (let i=0; i < imgLinks.length; i++) {
+    console.log[i];
+        let caption = (imgLinks[i].getAttribute('title').toLowerCase);
+        if(caption.includes(searchResult)){
+          imgLinks[i].style.display = '';
         } else {
-          imgLinks.style.display = 'none';
+          imgLinks[i].style.display = 'none';
         }
+
       }
 
   });
