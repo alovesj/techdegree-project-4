@@ -22,7 +22,5 @@ input.addEventListener('keyup', () => {
         } else {
           imgLinks[i].parentNode.parentNode.style.display = 'none';
         }
-
       }
-
   });
