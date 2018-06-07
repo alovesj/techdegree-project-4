@@ -47,9 +47,6 @@ input[type="search"] {
 .sl-wrapper .sl-navigation button {
     color: #fff;
 }
-.sl-wrapper .sl-counter {
-  display: hidden;
-}
 .sl-caption.pos-bottom {
   text-align: center;
   font-family: 'Lekton', sans-serif;
@@ -58,6 +55,9 @@ input[type="search"] {
 
 @media only screen and (min-width : 768px) {
 
+}
 
 
 @media only screen and (min-width : 1200px) {
+
+}
