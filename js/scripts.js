@@ -18,9 +18,9 @@ input.addEventListener('keyup', () => {
     console.log[i];
         let caption = (imgLinks[i].getAttribute('title').toLowerCase());
         if(caption.includes(searchResult)){
-          imgLinks[i].style.display = '';
+          imgLinks[i].parentNode.parentNode.style.display = '';
         } else {
-          imgLinks[i].style.display = 'none';
+          imgLinks[i].parentNode.parentNode.style.display = 'none';
         }
 
       }
